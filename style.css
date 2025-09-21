@@ -20,6 +20,7 @@ nav ul{
   display:flex;
   justify-content:center;
   list-style: none;
+  cursor: pointer;
 
 }
 .name{
@@ -30,6 +31,7 @@ nav li a{
   margin: 0 30px;
   text-decoration: none;
   color:beige;
+  cursor: pointer;
 }
 nav li a:hover{
   color:blue;
@@ -56,6 +58,7 @@ nav li a:hover{
   border-radius: 20px;
   padding:6px;
   background-image: linear-gradient(to right,#D8B5FF,#1EAE98);
+  cursor: pointer;
 
 }
 #download2{
@@ -65,6 +68,7 @@ nav li a:hover{
       background-image: linear-gradient(to right,#D8B5FF,#1EAE98);
    border-radius: 20px;
   padding:6px;
+  cursor: pointer;
 }
 #download1:hover{
    background-image: linear-gradient(to right,#1EAE98,#D8B5FF);
@@ -88,8 +92,11 @@ nav li a:hover{
 }
 .about .aboutme{
   width:50%;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin:5rem;
+}
+.resume{
+  font-size: 1.5rem;
 }
 .Skills{
   margin-left:50px;
@@ -155,6 +162,7 @@ html{
   width:5.5rem;
   background-image: linear-gradient(90deg, #7bc8ff, #9b6eff);
   border-radius: 20px;
+  cursor: pointer;
 }
 #btn:hover{
    background-image: linear-gradient(90deg, #9b6eff, #7bc8ff);
