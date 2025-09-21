@@ -5,11 +5,11 @@
 }
 body{
   background-color: rgb(15, 12, 12);
-  color:cornsilk;
+  color:white;
 }
 nav{
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 50px;
 }
@@ -42,6 +42,13 @@ nav li a:hover{
   height: 60vh;
 
 }
+
+.naam{
+  font-size: 3.5rem;
+  background: linear-gradient(90deg,#f0c, #33f);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 #download1{
   font-size:1.6rem;
   margin:6px;
@@ -67,15 +74,16 @@ nav li a:hover{
 }
 .about{
   display:flex;
-  justify-content:space-between;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin:auto;
 
 }
 .about .photo{
   width:50%;
-  margin:60px;
+  margin:auto;
   border-radius: 50%;
+
 
 }
 .about .aboutme{
@@ -85,8 +93,10 @@ nav li a:hover{
 }
 .Skills{
   margin-left:50px;
+  
 
 }
+
 .lang{
   color:grey;
 }
@@ -115,7 +125,7 @@ html{
 }
 .contact{
    display:flex;
-  color: #ddd;
+  color:white;
   flex-direction: column;
   font-size:0.9rem;
   background-color: rgb(11, 10, 10);
@@ -126,17 +136,18 @@ html{
 .info{
   max-width:300px;
   margin:2px auto;
-  padding:1.5rem;
+  padding: 0.9em;
   width:40%;
   background-color:transparent;
   text-align: center;
   color: white;
   gap:1.8rem;
+  border-radius:20px;
 
 }
 #msg{
  height: 5rem;
-    padding: 0.2rem 2rem;
+    padding: 0.2rem 0.9rem;
 }
 #btn{
   margin: 5px;
@@ -144,6 +155,9 @@ html{
   width:5.5rem;
   background-image: linear-gradient(90deg, #7bc8ff, #9b6eff);
   border-radius: 20px;
+}
+#btn:hover{
+   background-image: linear-gradient(90deg, #9b6eff, #7bc8ff);
 }
 @media (max-width: 864px) {
   .about{
