@@ -8,22 +8,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <header>
-  <nav>
-    <div class="naam">Ujjawal Chauhan</div>
-    <div class="list">
-      <ul>
-        <li><a href="#home">Home</a></li>
+  <div id="nav">
+    <ul>
+     <li><a href="#home">Home</a></li>
          <li><a href="#about">About me</a></li>
           <li><a href="#ski">Skills</a></li>
         <li><a href="#con">Contact</a></li>
       </ul>
-    </div>
-  </nav>
-  </header>
+  </div>
   <main>
     <section class="Home" id="home">
-        <h1 class="naam">Hey,I'm Ujjawal chauhan</h1>
+        <h1 class="naam">Hey, I'm Ujjawal Chauhan</h1>
         <p>A passionate full-stack developer who builds fast, functional, and visually striking websites.
           
         </p>
@@ -34,10 +29,10 @@
     </section>
     <section class="about" id="about">
           <div class="photo">
-             <image src="ujj.jpg" width="500px" height="500px"></image>
+             <image src="ujj.jpg"  id="photo"></image>
           </div>
           <div class="aboutme">
-              <h1>About Me:</h1>
+              <h1 id="aboutmehead">About Me:</h1>
                 <div>A web developer with a passion for 
                 clean design and functional code, 
                 I specialize in building responsive, 
@@ -61,8 +56,8 @@
             </div>
     </section>
     <section class="Skills" id="ski">
-      <div class="lang">Languages</div>
       <h1 class="naam" >Skills</h1>
+       <div class="lang">Languages</div>
       <div class="line"></div>
       <div class="table">
         <span class="skill">HTML</span>
@@ -78,26 +73,31 @@
     </section>
 
   </main>
-    <section class="contact" id="con">
+    <div class="contact" id="con">
       <h1 class="naam">Contact Me</h1>
       <input type="text" id="name" placeholder="may i know your good name"  class="info">
     <input type="email" id="email" placeholder="your mail id" class="info">
     <input type="number" id="num" placeholder="mobile number" class="info">
     <input type="text" id="msg" placeholder="your message" class="info">
     <button type="submit" id="btn">Submit</button> 
-    </section>
+    </div>
     <footer>
 
-     <a herf="https://web.whatsapp.com" id="whatsapp">
+    <a herf="/" id="whatsapp">
       <i class="fa-brands fa-whatsapp"></i>
      </a>
-      <a herf="" id="facebook">
+      <a herf="/" id="facebook">
          <i class="fa-brands fa-facebook"></i>
       </a>
-      <a href="" id="mail">
+      <a href="mailto:chauhanujjawal070@gmail.com" id="mail">
         <i class="fa-solid fa-envelope" ></i>
       </a>
-
+      <a href="https://www.instagram.com/" target="_blank" id="instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="tel:9548898158" id="call">
+        <i class="fa-solid fa-phone"></i>
+      </a>
     </footer>
 
 </body>

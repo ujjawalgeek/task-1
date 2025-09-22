@@ -4,19 +4,20 @@
   font-family:'Times New Roman', Times, serif ;
 }
 body{
-  background-color: rgb(15, 12, 12);
+  background-color: blanchedalmond;
   color:white;
 }
-nav{
+#nav{
   display:flex;
-  justify-content: space-between;
+  justify-content:flex-end;
   align-items: center;
-  height: 50px;
+  height: 5rem;
+  background-color: #1EAE98;
 }
-nav:hover{
-  background-color: rgb(70, 36, 36);
+#nav:hover{
+  background-color:#0b7061;
 }
-nav ul{
+#nav ul{
   display:flex;
   justify-content:center;
   list-style: none;
@@ -27,27 +28,34 @@ nav ul{
   font-size: 30px;
   color:#ED1E79
 }
-nav li a{
+#nav li a{
   margin: 0 30px;
   text-decoration: none;
   color:beige;
   cursor: pointer;
+  font-size:1.5rem;
 }
 nav li a:hover{
-  color:blue;
-  font-size: 1.2rem;
+  color:red;
+  font-size: 1.6rem;
 }
 .Home{
   margin:70px;
   margin-top:200px;
   text-align: center;
   height: 60vh;
+  background-color: blanchedalmond;
 
+}
+.Home p{
+  margin:20px;
+  color:red;
+  font-size:1.3rem;
 }
 
 .naam{
-  font-size: 3.5rem;
-  background: linear-gradient(90deg,#f0c, #33f);
+  font-size: 2.5rem;
+  background: #1EAE98;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -76,24 +84,29 @@ nav li a:hover{
 #download2:hover{
  background-image: linear-gradient(to right,#1EAE98,#D8B5FF);
 }
+#photo{
+  border:2px solid rgb(119, 22, 22);
+  border-radius:50%;
+  width:400px;
+  height:400px;
+  margin:50px;
+  padding:10px;
+}
 .about{
   display:flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin:auto;
 
 }
-.about .photo{
-  width:50%;
-  margin:auto;
-  border-radius: 50%;
-
-
+#aboutmehead{
+  color:#1EAE98;
 }
 .about .aboutme{
   width:50%;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin:5rem;
+  color:black;
 }
 .resume{
   font-size: 1.5rem;
@@ -105,19 +118,21 @@ nav li a:hover{
 }
 
 .lang{
-  color:grey;
+  color:#0b7061;
+  font-size: 1.2rem;
 }
 .Skills .line{
-  background: white;
-  width:80vw;
+  background: rgb(190, 113, 113);
+  width:100%;
   height: 2px;
-  margin:20px;
+  margin-top:20px;
+  margin-bottom:20px;
 }
 .Skills  span{
   margin:1.2rem;
   border: 1px solid black;
   padding:5px 16px;
-  box-shadow: 5 5 10px #f0c6;;
+  box-shadow: 5 5 10px #f0c6;
   border-radius: 15px;
   background-image: linear-gradient(to right,#662D8C ,#ED1E79);
   max-width:150px;
@@ -134,21 +149,21 @@ html{
    display:flex;
   color:white;
   flex-direction: column;
-  font-size:0.9rem;
   background-color: rgb(11, 10, 10);
   align-items: center;
-  padding:1rem;
-   margin: 0 auto;
+   width:100%;
 }
 .info{
   max-width:300px;
-  margin:2px auto;
-  padding: 0.9em;
+  margin:5px;
+  font-size:1rem;
+  padding: 1.2em;
   width:40%;
   background-color:transparent;
   text-align: center;
   color: white;
   gap:1.8rem;
+  border:2px  solid rgb(11, 220, 11);
   border-radius:20px;
 
 }
@@ -174,6 +189,8 @@ footer{
   font-size: 30px;
   gap:15px;
   color:blue;
+  padding:20px;
+  background-color: black;
 }
 #whatsapp{
   color:green
@@ -184,22 +201,60 @@ footer{
 #mail{
   color:red;
 }
-@media (max-width: 864px) {
+@media (max-width: 1222px) {
   .about{
     flex-direction: column;
-  }
- .table{
-     flex-direction: column;
+    justify-content: space-around;
+    font-size: 20%;
+
   }
 
 }
-@media(max-width:675px){
-  .table{
-     flex-direction: column;
+@media (max-width: 867px) {
+  #nav{
+    display: flex;
+    justify-content: center;
+    font-size:1.1rem ;
+    align-items: center;
+    width:100%;
+
+  }
+
+}
+@media(max-width:1222px){
+  .about .photo{
+  width:20%;
+  height:20%;
+  align-self: center;
+  }
+
+}
+@media(max-width:800px){
+  .about .aboutme{
+    margin:auto;
+    font-size: 1.1rem;
+
   }
 }
 @media(max-width:554px){
-  nav{
+  #nav ul{
      flex-direction: column;
+     justify-content: center;
+     width:100%;
+  }
+}
+@media(max-width:282px){
+  footer{
+     flex-direction: column;
+     justify-content: center;
+     align-content: center;
+     margin:auto;
+  }
+}
+@media(max-width:783px){
+  .table{
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
   }
 }
