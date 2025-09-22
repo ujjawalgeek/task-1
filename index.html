@@ -8,82 +8,70 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <div id="nav">
-    <ul>
-     <li><a href="#home">Home</a></li>
-         <li><a href="#about">About me</a></li>
-          <li><a href="#ski">Skills</a></li>
-        <li><a href="#con">Contact</a></li>
-      </ul>
-  </div>
-  <main>
-    <section class="Home" id="home">
-        <h1 class="naam">Hey, I'm Ujjawal Chauhan</h1>
-        <p>A passionate full-stack developer who builds fast, functional, and visually striking websites.
-          
-        </p>
-        <div>
-          <button type="submit" id="download1" > Download CV</button>
-          <button type="submit" id="download2" >Visit github</button>
+  <div id="header">
+       <div class="container">
+        <nav>
+            <img src="uc.webp" class="logo">
+            <ul>
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#serv">Services</a></li>
+              <li><a href="/">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+        <div class="header-text">
+          <h1>Hey, I'm Ujjawal Chauhan</h1>
+          <p1>A passionate full-stack developer who builds fast, functional, and visually striking web apps.</p1>
+
         </div>
-    </section>
-    <section class="about" id="about">
-          <div class="photo">
-             <image src="ujj.jpg"  id="photo"></image>
-          </div>
-          <div class="aboutme">
-              <h1 id="aboutmehead">About Me:</h1>
-                <div>A web developer with a passion for 
-                clean design and functional code, 
-                I specialize in building responsive, 
-                user-focused websites that make a 
-                lasting impact.Whether it's a simple 
-                landing page or a complex web application,
-                 every project is built with precision, 
-                 creativity, and a focus on results.
+        
+       </div>
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col1">
+          <img src="ujj.jpg" id="photo" >
+          
+        </div>
+        <div class="col2">
+          <h1 class="aboutme">About me</h1>
+          <p class="para"> A web developer with a passion for clean design and functional code, I specialize in building responsive, user-focused websites that make a lasting impact. With a strong foundation in front-end and back-end technologies, I aim to deliver digital solutions that are not only visually appealing but also optimized for performance and user experience. Whether it's a simple landing page or a complex web application, every project is built with precision, creativity, and a focus on results.</p>
 
-              </div>
-              <div>
-              <h3>details</h3>
-      <div class=resume><strong>Name: Ujjawal Chauhan</strong></div>
-      <div class=resume><strong>DOB: 5 Sept 2005</strong></div>
-      <div class=resume><strong>College: Ajay Kumar Garg Engg College</strong></div>
-      <div class=resume><strong>Course: Bachelor of technology</strong></div>
-      <div class=resume><strong>Branch: CSE</strong></div>
-      <div class=resume><strong>School: Army Public School </strong></div>
-
-              </div>
-            </div>
-    </section>
-    <section class="Skills" id="ski">
-      <h1 class="naam" >Skills</h1>
-       <div class="lang">Languages</div>
-      <div class="line"></div>
-      <div class="table">
-        <span class="skill">HTML</span>
-          <span class="skill">CSS</span>
-          <span class="skill">JavaScript</span>
-          <span class="skill">Java</span>
-          <span class="skill">C</span>
-          <span class="skill">Python</span>
-          <span class="skill">Git</span>
       </div>
-      <div class="line"></div>
 
-    </section>
-
-  </main>
-    <div class="contact" id="con">
-      <h1 class="naam">Contact Me</h1>
-      <input type="text" id="name" placeholder="may i know your good name"  class="info">
-    <input type="email" id="email" placeholder="your mail id" class="info">
-    <input type="number" id="num" placeholder="mobile number" class="info">
-    <input type="text" id="msg" placeholder="your message" class="info">
-    <button type="submit" id="btn">Submit</button> 
     </div>
-    <footer>
 
-    <a herf="/" id="whatsapp">
+  </div>
+  <div class="Services" id="serv">
+    <div class="container">
+      <h1 class="title">My Services</h1>
+      <div class="serviceList">
+        <div>
+           <i class="fa-solid fa-code"></i>
+           <h1>Web developer</h1>
+           <p>kjgrbjkzbbewfewbfbewbewbfewubfe</p>
+        </div>
+        <div>
+
+          <h1>Web design</h1>
+          <p>dvsbvbcbscbksbdvbsvkb</p>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact1">
+          <h1>Contact Me</h1>
+          <p>ujjawalcha123@gmail.com</p>
+          <p>no:875311236</p>
+          <div class="social">
+            <a herf="/" id="whatsapp">
       <i class="fa-brands fa-whatsapp"></i>
      </a>
       <a herf="/" id="facebook">
@@ -98,7 +86,20 @@
       <a href="tel:9548898158" id="call">
         <i class="fa-solid fa-phone"></i>
       </a>
-    </footer>
+          </div>
+        </div>
+        <div class="contact2">
+           <form>
+            <input type="text" name="Name" placeholder="can i know your good name" required>
+            <input type="email" name="Email" placeholder="your email" required>
+            <textarea name="message" rows="6" placeholder="your message"></textarea>
+            <button type="submit" >get in touch</button>
+           </form>
+        </div>
+      </div>
 
+    </div>
+
+  </div>
 </body>
 </html>
