@@ -167,6 +167,23 @@ html{
 #btn:hover{
    background-image: linear-gradient(90deg, #9b6eff, #7bc8ff);
 }
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  gap:15px;
+  color:blue;
+}
+#whatsapp{
+  color:green
+}
+#facebook{
+  color:rgb(168, 168, 245);
+}
+#mail{
+  color:red;
+}
 @media (max-width: 864px) {
   .about{
     flex-direction: column;
