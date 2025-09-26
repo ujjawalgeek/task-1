@@ -182,6 +182,9 @@ color:yellow;
   font-size: 1.5rem;
   margin-bottom: 50px;
 }
+.social i:hover{
+  font-size: 2rem;
+}
 #facebook{
   color:blue;
 }
@@ -231,20 +234,30 @@ button{
 @media(max-width:600px){
   .header-text h1{
   font-size: 1.5rem;
-margin-top: 100%;
+margin-top: 50%;
 
 }
 .header-text p1{
   font-size: 1.5rem;
   text-align: center;
 }
-.aboutme{
-  font-size: 40px;
+#photo{
+  width:200px;
+  height:200px;
 
+}
+.aboutme{
+  font-size: 30px;
+}
+.para{
+  font-size: 1rem;
 }
 .col1,.col2{
   flex-basis:100%;
 
+}
+#details li{
+  font-size: 1rem;
 }
 .col1{
   margin-bottom: 20px;
