@@ -65,6 +65,7 @@ color:rgb(70,90,110);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+   margin-bottom: 100px;
 }
 .col1{
   flex-basis: 35%;
@@ -250,10 +251,10 @@ grid-template-columns:1fr;
 }
 }
 @media(max-width:580px){
-  .contact2 form{
-    align-content: center;
-    margin:auto;
-  }
+  .contact2 ,.contact1{
+   flex-basis: 100%;
+   text-align:center;
+ }
 }
 
 
