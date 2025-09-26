@@ -185,6 +185,9 @@ color:yellow;
 #mail{
   color:yellowgreen;
 }
+#python{
+  color:green;
+}
 .contact2 form{
   display: flex;
   flex-direction: column;
