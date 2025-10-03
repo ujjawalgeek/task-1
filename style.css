@@ -6,7 +6,7 @@
 }
 body{
 color: rgb(40,40,40);
- background-color: rgb(245,248,250);
+ background-color: rgba(163, 164, 165, 0.286);
 
 }
 #header{
@@ -120,7 +120,8 @@ color:rgb(70,90,110);
   flex-basis: 35%;
 }
 #photo{
-  border-radius: 15px;
+  border-radius: 50%;
+  border:2px solid rgb(200,220,255);
   width:100%;
 }
 .col2{
