@@ -15,8 +15,21 @@ color: rgb(40,40,40);
 
 }
 .container{
-   width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+}
 
+.container2{
+  padding:10px 10%;
+}
+.container3{
+  padding:10px 10%;
+}
+.container4{
+  padding:10px 10%;
 }
 .logo{
   width:100px;
@@ -31,11 +44,11 @@ nav ul li {
 }
 nav{
   display: flex;
+  width:100%;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
  background-color: rgb(155, 193, 250); 
- border-radius: 12px;
 
 }
 nav ul li a{
@@ -49,22 +62,52 @@ nav ul li a:hover{
   
 }
 .header-text{
-  padding: 10px 10%;
+  padding:0 20px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+
 }
 .header-text h1{
   font-size: 60px;
 margin-top: 20%;
  color:rgb(30,60,120);
 }
+#header-img{
+  width:300px;
+  height:300px;
+  border:2px solid rgb(200,220,255);
+  border-radius: 50% ;
+  margin-top: 40%;
+
+}
+#header-img:hover{
+  transform: rotate(20deg);
+  transition: transform 0.5s;
+}
+#download{
+  padding:14px 40px;
+  font-size: 18px;
+  width:250px;
+  margin-top: 20px;
+  cursor: pointer;
+  color:#fff;
+  background-color: rgb(116, 157, 239);
+  border-radius: 20px;
+  margin-right: 20px;
+}
+#download:hover{
+  background-color: rgb(30,60,120);
+  transition: background-color 0.5s;
+}
 #para1{
-  padding-top:100px;
   font-size:20px;
 margin-top:50%;
 margin-bottom: 50px;
 color:rgb(70,90,110);
 }
 #about{
-  padding:80px 10%;
+  padding:80px 0;
   color:#ccc;
 }
 .row{
@@ -90,6 +133,7 @@ color:rgb(70,90,110);
    color:rgb(30,60,120);
   font-size: 60px;
   font-weight: bold;
+  padding:20px;
 }
 .para{
   font-size: 1.5rem;
@@ -115,7 +159,7 @@ font-weight: bold;
 font-size: 2.5rem;
 }
 #skills{
-  padding:30px 10%;
+  padding:30px 0;
 
 }
 .skillsList{
@@ -162,9 +206,6 @@ color:yellow;
 }
 #js{
   color:yellow;
-}
-#contact{
-  padding:12px 10%;
 }
 
 
@@ -245,6 +286,17 @@ button{
 margin-top: 50%;
 
 }
+#header-img{
+  width:150px;
+  height:150px;
+  margin-top: 20%;
+}
+#para1{
+  font-size:1rem;}
+
+.header-text{
+  flex-direction: column;
+}
 .header-text p1{
   font-size: 1.5rem;
   text-align: center;
@@ -306,9 +358,3 @@ grid-template-columns:1fr;
     margin-top: 15px;
   }
 }
-
-
-
-
-
-
