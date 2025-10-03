@@ -281,12 +281,58 @@ button{
   border-radius: 20px;
 
 }
+.resume {
+      padding: 60px ;
+    }
+ .resume-grid {
+       display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 40px;
+  margin-top: 50px;
+    }
+     .resume-item {
+      background: rgb(154, 168, 199);
+      border:2px solid rgb(93, 135, 250);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding:20px;
+    }
+     .resume-item:hover{
+      background:rgb(175, 175, 239);
+      transform:translateY(-10px);
+      transition: background 0.5s ,transform 0.5s;
+     }
+    .resume h2 {
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+      text-align: center;
+      color: rgb(30,60,120);
+    }
+
+    .resume-item h3 {
+      margin: 0;
+      font-size: 2rem;
+      color:#007bff;
+
+    }
+
+    .resume-item span {
+      font-size: 20px;
+      color:#5a5959;
+
+    }
+
+    .resume-item p {
+      font-size: 20px;
+      margin-top: 10px;
+
+    }
 @media(max-width:600px){
   .header-text h1{
   font-size: 1.5rem;
 margin-top: 50%;
-
-}
+  }
 #header-img{
   width:150px;
   height:150px;
@@ -357,5 +403,10 @@ grid-template-columns:1fr;
   }
   .logo{
     margin-top: 15px;
+  }
+}
+@media(max-width: 900px){
+ .resume-grid {
+    grid-template-columns: 1fr;
   }
 }
